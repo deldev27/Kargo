@@ -728,3 +728,128 @@ body {
 	justify-content: space-evenly;
 	padding-bottom: 20px;
 }
+
+/* HTML - manager */
+
+.profile {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.profile__description {
+	max-width: 844px;
+	height: 497px;
+	border-radius: 24px;
+	background: rgb(244, 250, 255);
+}
+
+.profile__title {
+	font-size: 51px;
+	font-weight: 700;
+	line-height: 60px;
+	padding: 52px 0px 0px 72px;
+	color: rgb(32, 50, 83);
+}
+
+.profile__subtitle {
+	font-size: 18px;
+	line-height: 140%;
+	padding: 15px 108px 70px 72px;
+	color: rgb(51, 93, 147);
+}
+
+.profile__img {
+	width: 412px;
+	height: 497px;
+	border-radius: 24px;
+	background: url(../img/human.svg), rgb(177, 221, 255);
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.example__header {
+	padding: 40px 0px 0px 72px;
+}
+
+.example__title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 47px;
+	color: rgb(32, 50, 83);
+}
+
+.example__subtitle {
+	max-width: 664px;
+	font-size: 18px;
+	line-height: 140%;
+	margin-top: 29px;
+	color: rgb(51, 93, 147);
+}
+
+.example-elem2__header {
+	padding: 90px 0px 0px 72px;
+}
+
+.example-elem2__title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38px;
+	color: rgb(32, 50, 83);
+}
+
+.example-elem2__subtitle {
+	max-width: 664px;
+	font-size: 16px;
+	line-height: 140%;
+	margin-top: 20px;
+	color: rgb(51, 93, 147);
+}
+
+.example-elem2 {
+	margin-bottom: 89px;
+}
+
+.quote {
+	margin-bottom: 60px;
+}
+
+.quote__block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 844px;
+	height: 350px;
+	border-radius: 24px;
+	background: rgb(244, 250, 255);
+	position: relative;
+}
+
+.quotes-elem1 {
+	font-family: 'PT sans', sans-serif;
+	font-size: 220px;
+	line-height: 140%;
+	color: rgb(32, 50, 83);
+	position: absolute;
+	left: 47px;
+	bottom: 63px;
+}
+
+.quotes-elem2 {
+	font-family: 'PT sans', sans-serif;
+	font-size: 220px;
+	line-height: 140%;
+	color: rgb(32, 50, 83);
+	position: absolute;
+	right: 65px;
+	top: 173px;
+}
+
+.quote__text {
+	max-width: 596px;
+	height: 125px;
+	font-size: 18px;
+	line-height: 140%;
+	color: rgb(51, 93, 147);
+}
