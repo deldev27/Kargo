@@ -71,7 +71,7 @@
           <form class="hero__form" action="">
             <input class="hero__input hero__input-icon" placeholder="Введите ваш номер телефона" type="tel">
             <input class="hero__input" placeholder="Какой товар вы ищите или хотите доставить в Россию?" type="text">
-            <button class="hero__btn" type="submit">Получить 100$ скидку на доставку</button>
+            <button class="hero__btn btn" type="submit">Получить 100$ скидку на доставку</button>
           </form>
         </div>
 
@@ -206,6 +206,48 @@
                 </div>
               </div>
             </div>
+            <button class="case__btn btn" type="button" id="open-modal">Заказать</button>
+            <div class="modal" id="modal">
+              <div class="modal__block">
+                <div class="modal__container">
+                  <div class="modal__header">
+                    <h2 class="modal__title">Заполните форму</h2>
+                    <button class="modal__close-btn" id="close-modal">
+                      <svg width="48.000000" height="48.000000" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                          <clipPath id="clip182_6702">
+                            <rect id="close_FILL0_wght700_GRAD0_opsz48 1" width="48.000000" height="48.000000"
+                              fill="white" fill-opacity="0" />
+                          </clipPath>
+                        </defs>
+                        <rect id="close_FILL0_wght700_GRAD0_opsz48 1" width="48.000000" height="48.000000"
+                          fill="#FFFFFF" fill-opacity="0" />
+                        <g clip-path="url(#clip182_6702)">
+                          <path id="Vector"
+                            d="M12.45 38.85L9.1499 35.55L20.7 24L9.1499 12.4501L12.45 9.15002L24 20.7001L35.5498 9.15002L38.8499 12.4501L27.2998 24L38.8499 35.55L35.5498 38.85L24 27.3L12.45 38.85Z"
+                            fill="#203253" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </g>
+                      </svg>
+
+                    </button>
+                  </div>
+                  <form class="modal__form" action="">
+                    <input class="modal__form-input name-icon" type="text" placeholder="Ваше имя">
+                    <input class="modal__form-input phone-icon" type="text" placeholder="Введите ваш номер телефона">
+                    <input class="modal__form-input email-icon" type="text" placeholder="Ваша электронная почта">
+                    <input class="modal__form-input" type="text"
+                      placeholder="Какой товар вы ищите или хотите доставить в Россию?">
+                    <button class="modal__form-btn btn" type="subbmit">Отправить заявку</button>
+                  </form>
+                  <p class="modal__form-description">Отправляя заявку вы соглашаетесь с
+                    <a class="modal__description-link" href="#">Условиями использования</a> и
+                    <a class="modal__description-link" href="#">Политикой конфиденциальности</a>,
+                    тем самым соглашаетесь на обработку персональных данных
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <img class="cases__img" src="img/cases/case.jpg" alt="">
         </div>
@@ -230,7 +272,7 @@
               <h4 class="delivery__card-title">Авиа<br>перевозки</h4>
               <p class="delivery__card-time">6-10 дней</p>
               <p class="delivery__card-price">от $5.5 за кг</p>
-              <button class="delivery__card-btn">Заказать</button>
+              <button class="delivery__card-btn btn" type="button">Заказать</button>
             </div>
           </div>
           <div class="delivery__card">
@@ -239,7 +281,7 @@
               <h4 class="delivery__card-title">Авто<br>перевозки</h4>
               <p class="delivery__card-time">6-10 дней</p>
               <p class="delivery__card-price">от $5.5 за кг</p>
-              <button class="delivery__card-btn">Заказать</button>
+              <button class="delivery__card-btn btn" type="button">Заказать</button>
             </div>
           </div>
           <div class="delivery__card">
@@ -248,7 +290,7 @@
               <h4 class="delivery__card-title">Ж/Д<br>перевозки</h4>
               <p class="delivery__card-time">6-10 дней</p>
               <p class="delivery__card-price">от $5.5 за кг</p>
-              <button class="delivery__card-btn">Заказать</button>
+              <button class="delivery__card-btn btn" type="button">Заказать</button>
             </div>
           </div>
           <div class="delivery__card">
@@ -257,7 +299,7 @@
               <h4 class="delivery__card-title">Морские<br>перевозки</h4>
               <p class="delivery__card-time">6-10 дней</p>
               <p class="delivery__card-price">от $5.5 за кг</p>
-              <button class="delivery__card-btn">Заказать</button>
+              <button class="delivery__card-btn btn" type="button">Заказать</button>
             </div>
           </div>
         </div>
@@ -334,7 +376,7 @@
             <input class="request__input request__phone-icon" type="tel" placeholder="Введите ваш номер телефона">
             <input class="request__input request__email-icon" type="text" placeholder="Ваша электронная почта">
             <input class="request__input" type="text" placeholder="Какой товар вы ищите или хотите доставить в Россию?">
-            <button class="request__btn">Получить 100$ скидку на доставку</button>
+            <button class="request__btn btn" type="subbmit">Получить 100$ скидку на доставку</button>
           </form>
           <p class="request__description">Отправляя заявку вы соглашаетесь с
             <a class="request__description-link" href="#">Условиями использования</a> и
@@ -369,9 +411,6 @@
     </div>
   </main>
 
-
-
-
   <footer class="footer">
     <div class="container">
       <section class="footer__content">
@@ -395,6 +434,8 @@
       </section>
     </div>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
