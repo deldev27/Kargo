@@ -165,6 +165,12 @@ hr {
 }
 
 input,
+button,
+textarea {
+	outline: none;
+}
+
+input,
 select {
 	vertical-align: middle;
 }

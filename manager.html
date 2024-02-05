@@ -10,6 +10,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/shortcut icon/manager.png">
   <title>Ваш Менеджер</title>
 </head>
 
@@ -18,10 +19,10 @@
     <div class="container">
       <nav class="menu">
         <a class="menu__logo" href="index.html">
-          <img class="logo" src="img/logo.jpg" alt="">
+          <img class="logo" src="img/logo.png" alt="">
         </a>
 
-        <ul class="menu__list">
+        <ul class="menu__list" id="menu-manager">
           <li class="menu__item">
             <a class="menu__link" href="index.html">
               Главная
@@ -43,6 +44,29 @@
             </a>
           </li>
         </ul>
+        <div class="burger" id="burger-manager">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="burger__close-img">
+            <svg width=" 48.000000" height="48.000000" viewBox="0 0 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <clipPath id="clip182_6702">
+                  <rect id="close_FILL0_wght700_GRAD0_opsz48 1" width="48.000000" height="48.000000" fill="white"
+                    fill-opacity="0" />
+                </clipPath>
+              </defs>
+              <rect id="close_FILL0_wght700_GRAD0_opsz48 1" width="48.000000" height="48.000000" fill="#FFFFFF"
+                fill-opacity="0" />
+              <g clip-path="url(#clip182_6702)">
+                <path id="Vector"
+                  d="M12.45 38.85L9.1499 35.55L20.7 24L9.1499 12.4501L12.45 9.15002L24 20.7001L35.5498 9.15002L38.8499 12.4501L27.2998 24L38.8499 35.55L35.5498 38.85L24 27.3L12.45 38.85Z"
+                  fill="#203253" fill-opacity="1.000000" fill-rule="nonzero" />
+              </g>
+            </svg>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -132,8 +156,8 @@
     <div class="container">
       <section class="footer__content">
         <div class="footer__logo">
-          <img class="footer__logo-img" src="img/footer/footerLogo.svg" alt="">
-          <img class="footer__logo-img" src="img/footer/footerLogo2.svg" alt="">
+          <img class="footer__logo-img" src="img/footer/FooterLogo1.png" alt="">
+          <img class="footer__logo-img" src="img/footer/FooterLogo2.png" alt="">
         </div>
         <div class="footer__nav">
           <a class="footer__nav-link" href="index.html">Главная</a>
@@ -143,14 +167,16 @@
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts-img">
-            <img src="img/footer/wechat.svg" alt="">
-            <img src="img/footer/whatsapp.svg" alt="">
+            <img src="img/footer/Wechat.png" alt="">
+            <img src="img/footer/WhatsApp.png" alt="">
           </div>
-          <img class="footer__qrcode-img" src="img/footer/qrCode.svg" alt="">
+          <img class="footer__qrcode-img" src="img/footer/QrCode.png" alt="">
         </div>
       </section>
     </div>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
