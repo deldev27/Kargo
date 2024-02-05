@@ -495,8 +495,6 @@ body {
 }
 
 .delivery__card {
-	width: 304px;
-	height: 424px;
 	border-radius: 32px;
 	background: rgba(244, 250, 255);
 }
@@ -655,21 +653,21 @@ body {
 	background-image: url(../img/request/personForm.svg);
 	background-repeat: no-repeat;
 	background-size: 24px;
-	background-position: right 24px center;
+	background-position: calc(100% - 24px);
 }
 
 .request__phone-icon {
 	background-image: url(../img/request/callForm.svg);
 	background-repeat: no-repeat;
 	background-size: 24px;
-	background-position: right 24px center;
+	background-position: calc(100% - 24px);
 }
 
 .request__email-icon {
 	background-image: url(../img/request/emailForm.svg);
 	background-repeat: no-repeat;
 	background-size: 24px;
-	background-position: right 24px center;
+	background-position: calc(100% - 24px);
 }
 
 .request__input,
@@ -1094,6 +1092,13 @@ details[open] summary::after {
 		justify-items: center;
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.delivery__card-info {
+		padding: 28px 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 @media (max-width: 1200px) {
 	.case {
@@ -1162,6 +1167,10 @@ details[open] summary::after {
 	.hero__img {
 		width: 770px;
 		height: 650px;
+	}
+
+	.request__form {
+		gap: 10px;
 	}
 }
 
@@ -1314,7 +1323,9 @@ details[open] summary::after {
 	}
 
 	.request__contacts-title,
-	.request__contacts-text {
+	.request__contacts-text,
+	.delivery__card-time,
+	.delivery__card-price {
 		font-size: 16px;
 	}
 
@@ -1327,6 +1338,10 @@ details[open] summary::after {
 		height: 48px;
 	}
 
+	.delivery__card-title {
+		font-size: 20px;
+	}
+
 	.hero__item p,
 	.hero__form,
 	.hero__input::placeholder,
@@ -1337,8 +1352,16 @@ details[open] summary::after {
 	.case__info,
 	.spec__info,
 	.case__btn,
-	.request__btn {
+	.request__input,
+	.request__btn,
+	.delivery__card-btn {
 		font-size: 14px;
+	}
+
+	.request__name-icon,
+	.request__phone-icon,
+	.request__email-icon {
+		background-size: 18px;
 	}
 }
 
@@ -1437,5 +1460,31 @@ details[open] summary::after {
 
 	.modal__container {
 		max-width: 300px;
+	}
+
+	.advantages__card-block {
+		gap: 10px;
+	}
+
+	.advantages__card-info {
+		padding: 15px 20px;
+	}
+}
+
+@media (max-width: 360px) {
+	.advantages__card-block {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.advantages__card {
+		width: 300px;
+	}
+
+	.advantages__card-info {
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	}
 }
